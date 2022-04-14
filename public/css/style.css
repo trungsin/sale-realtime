@@ -1,0 +1,78 @@
+.transaction .lock {
+  border: 1px solid #000;
+  min-height: 20px;
+  cursor: pointer;
+  align-content: center;
+}
+
+.transaction .lock .content {
+  text-align: center;
+}
+
+.transaction .lock .content p {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.transaction .lock.tang {
+  background: #3c81e8;
+  color: #ffffff;
+  cursor: auto;
+}
+
+.transaction .lock.con {
+  background: #ffffff;
+}
+
+.transaction .lock.booking {
+  background: #e8e216;
+}
+
+.transaction .lock.coc {
+  background: #169ae8;
+}
+
+.transaction .lock.xac-nhan {
+  background: red;
+}
+
+.load {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: #0000007a;
+}
+
+.load .loader {
+  border: 6px solid #f3f3f3;
+  border-top: 6px solid #3498db;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  -webkit-animation: spin 2s linear infinite;
+          animation: spin 2s linear infinite;
+  position: absolute;
+  top: calc(50% - 25px);
+  left: calc(50% - 25px);
+}
+
+@-webkit-keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+

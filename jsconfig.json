@@ -1,0 +1,11 @@
+{
+    "typeAcquisition": {
+        "include": [
+            "datatables.net",
+            "jquery",
+            "select2",
+            "bootstrap",
+            "lodash"
+        ]
+    }
+}

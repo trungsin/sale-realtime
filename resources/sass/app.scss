@@ -1,0 +1,89 @@
+.app-footer,
+.app-header,
+.aside-menu,
+.main,
+.sidebar,
+sidebar-nav {
+    transition: initial;
+}
+
+.shown .details-icon {
+    color: var(--danger) !important;
+
+    &.icon-arrow-down:before {
+        content: "\e607";
+    }
+}
+
+.category-tree {
+    +label {
+        cursor: pointer;
+    }
+
+    &:checked+label {
+        color: var(--primary);
+    }
+}
+
+.category-card {
+    max-height: 200px;
+    overflow: auto;
+}
+
+.img-line-items {
+    max-height: 15rem;
+    padding: 0;
+}
+
+.popover {
+    max-width: 100%;
+}
+
+#toast-container {
+    position: fixed;
+    z-index: 1055;
+    bottom: 1rem;
+    left: 1rem;
+
+    #toast-wrapper {
+        position: absolute;
+        z-index: 1055;
+        bottom: 0;
+        left: 0;
+    }
+
+    .toast {
+        min-width: 200px;
+        background-color: var(--white);
+    }
+}
+
+.ql-editor {
+    min-height: 130px;
+}
+
+.ql-snow {
+    &.ql-toolbar {
+
+        border-width: 0 0 1px 0;
+    }
+
+    &.ql-container {
+        border-width: 0;
+    }
+}
+
+.custom-control-label {
+    user-select: none;
+}
+
+.select2-container--bootstrap .select2-selection {
+    font-size: .875rem;
+}
+
+.form-group-sm .select2-container--bootstrap .select2-selection--single,
+.input-group-sm .select2-container--bootstrap .select2-selection--single,
+.select2-container--bootstrap .select2-selection--single.form-control-sm {
+    font-size: .765625rem;
+}
+
